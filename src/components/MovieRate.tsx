@@ -1,5 +1,4 @@
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
-import styled from "styled-components";
 
 const MovieRate = ({ rate }: { rate: number }) => {
   const color = "#ffd400";

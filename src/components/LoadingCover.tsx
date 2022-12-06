@@ -15,7 +15,7 @@ const LoadingCover = () => {
         alignItems: "center",
       }}
     >
-      <img src={Spinner} />
+      <img src={Spinner} alt="loading" />
     </div>
   );
 };

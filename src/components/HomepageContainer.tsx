@@ -8,7 +8,7 @@ import {
 } from "../services/api";
 import MoviesContainer from "./HomeMoviesContainer";
 import { Movie } from "../services/model";
-// import * as S from "../../../components/styles/HomepageContainer.styled";
+
 import * as S from "../components/styles/HomepageContainer.styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

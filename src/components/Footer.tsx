@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
-import logo from "../assets/원티드로고.png";
+
+import logoWebP from "../assets/원티드로고.webp";
+import logoPng from "../assets/원티드로고.png";
+
 const Footer = () => {
   const ClicktoGithub = () => {
     window.location.href = "https://github.com/wanted-team-11/assignment3";
@@ -58,7 +61,12 @@ const Footer = () => {
           <ImgBox>
             <FaInstagram onClick={ClicktoGithub} />
           </ImgBox>
-          <FooterImg src={logo} onClick={ClickToWanted} />
+
+          <FooterPicture onClick={ClickToWanted}>
+            <source type="image/webp" srcSet={logoWebP} height={40} />
+            <source type="image/png" srcSet={logoPng} height={40} />
+            <img src={logoWebP} alt="wanted-img" height={40} />
+          </FooterPicture>
         </FooterImgBox>
       </FooterImgContainer>
     </FooterContainer>
@@ -125,7 +133,7 @@ const ImgBox = styled.div`
   cursor: pointer;
 `;
 
-const FooterImg = styled.img`
+const FooterPicture = styled.picture`
   margin-left: 30px;
   width: 200px;
   height: 40px;
