@@ -1,4 +1,5 @@
-import Spinner from "../assets/Spinner.gif";
+import SpinnerMp4 from "../assets/Spinner.mp4";
+import SpinnerWebm from "../assets/Spinner.webm";
 
 const LoadingCover = () => {
   return (
@@ -15,7 +16,10 @@ const LoadingCover = () => {
         alignItems: "center",
       }}
     >
-      <img src={Spinner} alt="loading" />
+      <video autoPlay loop muted playsInline>
+        <source src={SpinnerMp4} type="video/mp4" />
+        <source src={SpinnerWebm} type="video/webm" />
+      </video>
     </div>
   );
 };

@@ -25,7 +25,7 @@ export const ReleaseDate = styled.div`
 export const MovieImg = styled.img`
   border-radius: 10px;
   border-style: none;
-  width: 300px;
-  height: 420px;
+  width: 220px;
+  height: 330px;
   cursor: pointer;
 `;

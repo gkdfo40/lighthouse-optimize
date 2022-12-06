@@ -33,6 +33,7 @@ const MoviesContainer = ({ movies }: { movies: Movie }) => {
           ) : (
             <S.MovieImg
               src={`https://image.tmdb.org/t/p/w220_and_h330_face${poster_path}`}
+              alt="movie-poster"
             />
           )}
         </S.WrapperImg>

@@ -10,7 +10,7 @@ export const SpinnerWrapper = styled.div`
   align-items: center;
 `;
 
-export const Spinner = styled.img`
+export const Spinner = styled.video`
   width: 80px;
   height: 80px;
 `;
