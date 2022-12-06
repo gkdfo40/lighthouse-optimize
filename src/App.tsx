@@ -1,15 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import loadable from "@loadable/component";
+
 import GNB from "./components/GNB";
 import Footer from "./components/Footer";
 
-import PopularPage from "./page/popular/PopularPage";
-import HomePage from "./page/home/HomePage";
-import MovieDetailPage from "./page/movie-detail/MovieDetailPage";
-import InfiniteTest from "./page/InfiniteTest";
-import UpcomingPage from "./page/upcoming-page/UpcomingPage";
-import SearchResultPage from "./page/search-result/SearchResultPage";
-import TopRatePage from "./page/top-rate/TopRatePage";
-import NowPlayPage from "./page/now-playing/NowPlayPage";
+const PopularPage = loadable(() => import("./page/popular/PopularPage"));
+const HomePage = loadable(() => import("./page/home/HomePage"));
+const MovieDetailPage = loadable(
+  () => import("./page/movie-detail/MovieDetailPage")
+);
+const InfiniteTest = loadable(() => import("./page/InfiniteTest"));
+const UpcomingPage = loadable(
+  () => import("./page/upcoming-page/UpcomingPage")
+);
+const SearchResultPage = loadable(
+  () => import("./page/search-result/SearchResultPage")
+);
+const TopRatePage = loadable(() => import("./page/top-rate/TopRatePage"));
+const NowPlayPage = loadable(() => import("./page/now-playing/NowPlayPage"));
 
 function App() {
   return (
