@@ -6,7 +6,12 @@ export const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
+  }
+
+  @font-face {
+    font-family:"Spoqa Han Sans Neo", "sans-serif" ;
+    font-display: swap;
+    src: url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css) format('text/css');
   }
 
 `;
