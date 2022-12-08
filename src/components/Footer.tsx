@@ -67,10 +67,10 @@ const Footer = () => {
               type="image/webp"
               srcSet={logoWebP}
               width={200}
-              height={40}
+              height={30}
             />
-            <source type="image/png" srcSet={logoPng} width={200} height={40} />
-            <img src={logoWebP} alt="wanted-img" width={200} height={40} />
+            <source type="image/png" srcSet={logoPng} width={200} height={30} />
+            <img src={logoWebP} alt="wanted-img" width={200} height={30} />
           </FooterPicture>
         </FooterImgBox>
       </FooterImgContainer>
@@ -141,6 +141,6 @@ const ImgBox = styled.div`
 const FooterPicture = styled.picture`
   margin-left: 30px;
   width: 200px;
-  height: 40px;
+  height: 30px;
   cursor: pointer;
 `;
