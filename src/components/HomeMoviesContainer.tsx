@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Movie } from "../services/model";
 import * as S from "./styles/HomeMoviesContainer.styled";
 
+import noImagewebP from "../assets/noImage.webp";
+
 const MoviesContainer = ({ movies }: { movies: Movie }) => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -23,9 +25,7 @@ const MoviesContainer = ({ movies }: { movies: Movie }) => {
         <S.WrapperImg onClick={goToDetail}>
           {isLoading ? (
             <S.MovieImg
-              src={
-                "https://cdn.discordapp.com/attachments/1016620527223308320/1016942292126412800/Spin-1.4s-257px.gif"
-              }
+              src={noImagewebP}
               onLoad={() => {
                 changeLoadingStatus();
               }}
