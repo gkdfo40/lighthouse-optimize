@@ -63,9 +63,14 @@ const Footer = () => {
           </ImgBox>
 
           <FooterPicture onClick={ClickToWanted}>
-            <source type="image/webp" srcSet={logoWebP} height={40} />
-            <source type="image/png" srcSet={logoPng} height={40} />
-            <img src={logoWebP} alt="wanted-img" height={40} />
+            <source
+              type="image/webp"
+              srcSet={logoWebP}
+              width={200}
+              height={40}
+            />
+            <source type="image/png" srcSet={logoPng} width={200} height={40} />
+            <img src={logoWebP} alt="wanted-img" width={200} height={40} />
           </FooterPicture>
         </FooterImgBox>
       </FooterImgContainer>
