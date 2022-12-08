@@ -23,17 +23,19 @@ function App() {
   return (
     <BrowserRouter>
       <GNB />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="upcoming" element={<UpcomingPage />} />
-        <Route path="now-playing" element={<NowPlayPage />} />
-        <Route path="top-rated" element={<TopRatePage />} />
-        <Route path="movie-detail" element={<MovieDetailPage />} />
-        <Route path="popular" element={<PopularPage />} />
-        <Route path="movie-detail/:id" element={<MovieDetailPage />} />
-        <Route path="search-result" element={<SearchResultPage />} />
-        <Route path="test" element={<InfiniteTest />} />
-      </Routes>
+      <div style={{ minHeight: 1800 }}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="upcoming" element={<UpcomingPage />} />
+          <Route path="now-playing" element={<NowPlayPage />} />
+          <Route path="top-rated" element={<TopRatePage />} />
+          <Route path="movie-detail" element={<MovieDetailPage />} />
+          <Route path="popular" element={<PopularPage />} />
+          <Route path="movie-detail/:id" element={<MovieDetailPage />} />
+          <Route path="search-result" element={<SearchResultPage />} />
+          <Route path="test" element={<InfiniteTest />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );
